@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "json:server": "json-server --watch db.json",
+    "json:server": "json-server -p 5000 --watch db.json",
     "dev": "nodemon server.js"
   },
   "author": "jimeno0 <c.p.jimeno0@gmail.com> (http://jimeno0.com/)",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.2",
+    "cors": "^2.8.3",
     "express": "^4.15.3",
     "express-graphql": "^0.6.6",
     "graphql": "^0.10.3",
